@@ -1,0 +1,77 @@
+body{
+    padding:0;
+    margin:0;
+    background: linear-gradient(rgb(139, 132, 132),black)
+}
+.bg {
+    background-color:#151516 !important;
+}
+
+.navWidth{
+    margin: 10px 10px !important;
+}
+.logo {
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+}
+.logo img{
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 80px !important;
+    width: 80px !important;
+}
+.logo:hover{
+    background-color: transparent !important;
+}
+
+/* Intro.js*/
+
+.intro .intro-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 4.5rem;
+  
+}
+.container{
+    margin: 100px 0;
+}
+
+.intro .intro-content{
+    text-align: center;
+    color: #fff;
+}
+
+.intro .intro-subtitle {
+  font-size: 2.5rem;
+  
+}
+
+.intro .text-slider-items {
+  display: none;
+}
+
+.intro-single {
+  height: 350px;
+}
+
+
+.intro-single .intro-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+
+.intro-single .breadcrumb .breadcrumb-item:before {
+  color: #bbf5df;
+}
+
+.intro-single .breadcrumb .breadcrumb-item.active {
+  color: #bbf5df;
+}
+
+.intro-single .breadcrumb a {
+  color: #fff;
+}
+
+
