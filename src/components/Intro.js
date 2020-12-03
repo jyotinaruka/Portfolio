@@ -31,7 +31,7 @@ const Intro = () => {
                             </strong>
                         </p>
                         <p className="pt-3">
-                            <a href="/projects"><Button content='View My Projects' primary /></a>
+                            <a href="/projects"><Button content='View My Work' primary /></a>
 
 
 

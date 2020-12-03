@@ -7,8 +7,11 @@ body{
     background-color:#151516 !important;
 }
 
-.navWidth{
-    margin: 10px 10px !important;
+.p-0 {
+  padding: 0 !important;
+}
+.m-0{
+  margin: 0 !important;
 }
 .logo {
     padding: 0 !important;
@@ -33,13 +36,14 @@ body{
   font-size: 4.5rem;
   
 }
-.container{
-    margin: 100px 0;
-}
 
 .intro .intro-content{
     text-align: center;
     color: #fff;
+}
+
+.intro-content .container{
+    margin: 100px 0;
 }
 
 .intro .intro-subtitle {
@@ -72,6 +76,29 @@ body{
 
 .intro-single .breadcrumb a {
   color: #fff;
+}
+
+/* about.js*/
+/* https://media3.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif*/
+.about-bg{
+  background-image:url("https://i.imgur.com/Yr32yur.gif");
+  background-attachment: fixed;
+  height: 1000px;  
+}
+
+.about-align{
+  margin-top: 50px 0 !important;
+  /*background-color: rgba(31, 27, 47, 0.5) !important;*/
+}
+
+.about-me{
+  font-family: sans-serif !important;
+  font-size: large !important;
+  
+}
+
+.skills{
+  margin: 5px 5px !important;
 }
 
 

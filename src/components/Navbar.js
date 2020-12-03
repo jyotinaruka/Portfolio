@@ -11,8 +11,8 @@ import logo from '../JS-logo.png'
 
 const Navbar = () => {
     return (
-        <Segment className="bg" vertical>
-            <Container className="navWidth">
+        <Segment className="bg p-0" vertical>
+            <Container className="">
                 <Menu className="bg" borderless inverted size='massive'>
                     <Menu.Item as={Link} to="/" className="logo">
                         <img src={logo} alt="" />
@@ -28,7 +28,7 @@ const Navbar = () => {
                         </Menu.Item>
                         <Menu.Item as={Link} to="/projects">
                             <Icon name='book' />
-                            Projects
+                            Work
                         </Menu.Item>
                         <Menu.Item as={Link} to="/contact">
                             <Icon name='at' />
