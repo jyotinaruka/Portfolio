@@ -1,6 +1,5 @@
 import React from 'react'
-import "react-router";
-import { Link } from 'react-router-dom';
+import ScrollspyNav from "react-scrollspy-nav";
 import {
     Container,
     Icon,
@@ -11,34 +10,36 @@ import logo from '../JS-logo.png'
 
 const Navbar = () => {
     return (
-        <Segment className="bg p-0" vertical>
-            <Container className="">
+        <Segment className="bg p-0 navbar" vertical>
+            <Container>
+                <ScrollspyNav scrollTargetIds={['intro', 'about', 'projects', 'contact']}
+                    activeNavClass="active" offset={-80} scrollDuration={500}>
                 <Menu className="bg" borderless inverted size='massive'>
-                    <Menu.Item as={Link} to="/" className="logo">
+                        <Menu.Item as="a" href="/" className="logo">
                         <img src={logo} alt="" />
                     </Menu.Item>
                     <Menu.Menu position='right' className="bg" icon='labeled' borderless>
-                        <Menu.Item as={Link} to="/">
+                            <Menu.Item as="a" href="#intro">
                             <Icon name='home' />
                             Home
                         </Menu.Item>
-                        <Menu.Item as={Link} to="/about">
+                            <Menu.Item as="a" href="#about">
                             <Icon name='user circle' />
                             About
                         </Menu.Item>
-                        <Menu.Item as={Link} to="/projects">
+                            <Menu.Item as="a" href="#projects">
                             <Icon name='book' />
                             Work
                         </Menu.Item>
-                        <Menu.Item as={Link} to="/contact">
+                            <Menu.Item as="a" href="#contact">
                             <Icon name='at' />
                             Contact
                         </Menu.Item>
                     </Menu.Menu>
-                </Menu>
+                    </Menu>
+                </ScrollspyNav>
             </Container>
         </Segment>
-
     )
 }
 

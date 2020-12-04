@@ -5,7 +5,7 @@ import { Button } from 'semantic-ui-react';
 
 const Intro = () => {
     return (
-        <div id="home" className="intro route bg-image background">
+        <section id="intro" className="intro route bg-image background m-nav">
             <div id="stars" />
             <div id="stars2" />
             <div id="stars3" />
@@ -40,7 +40,7 @@ const Intro = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
     )
 }

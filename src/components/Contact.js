@@ -1,6 +1,6 @@
 import React from 'react'
 import Particles from "react-tsparticles";
-import { Segment, Header, Grid, GridRow } from 'semantic-ui-react';
+import { Segment, Header, Grid, GridRow, GridColumn } from 'semantic-ui-react';
 
 const Contact = () => {
     const particleOptions = {
@@ -204,12 +204,37 @@ const Contact = () => {
     };
 
     return (
-        <div className="contact position-rel">
-            <Particles id="tsparticles" options={particleOptions2} />
-            <Header size='huge' inverted textAlign='center'>
-                <u>Contact Me On</u>
+        <section id="contact" className="contact position-rel m-nav">
+            <Particles id="tsparticles" options={particleOptions2} canvasClassName="contact-bg" />
+            <Header className="m-c" size='huge' inverted textAlign='center'>
+                <u>Contact</u>
             </Header>
-        </div>
+
+            <Grid>
+                <GridColumn>
+                    <Segment>
+                        <h3>Email</h3>
+                        <h3>call</h3>
+
+
+                    </Segment>
+                </GridColumn>
+
+                <GridColumn>
+                    <Segment>
+
+                    </Segment>
+
+
+                </GridColumn>
+
+            </Grid>
+
+
+
+
+
+        </section>
     )
 }
 

@@ -6,8 +6,8 @@ import videoFriendbook from '../projects-video/friendbook.webm'
 
 const Projects = () => {
     return (
-        <div className="projects-bg p-1">
-            <Header as='h1' textAlign='center' size='huge' inverted>Projects</Header>
+        <section id="projects" className="projects-bg p-1 m-nav">
+            <Header as='h1' textAlign='center' size='Big' inverted>Projects</Header>
             <Grid stackable columns={2}>
                 <Grid.Column>
                     <Header as='h2' attached='top'>Muzic</Header>
@@ -49,7 +49,7 @@ const Projects = () => {
                     </video>
                 </Grid.Column>
             </Grid>
-        </div>
+        </section>
     )
 }
 

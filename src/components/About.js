@@ -15,10 +15,8 @@ import jyoti3 from '../jyoti3.jpg'
 
 
 const About = () => {
-
-
     return (
-        <div className="about-bg">
+        <section id="about" className="about-bg m-nav">
             <Container>
                 <Segment className="about-align" >
                     <Grid columns={2}>
@@ -27,8 +25,8 @@ const About = () => {
                         </Grid.Column>
 
                         <Grid.Column width={10} verticalAlign='top'>
-                            <Header size='huge' ><u><i>About Me</i></u></Header>
-                            <p className="about-me"><i>I am full stack developer with a background of Inside Sales in different domains,
+                            <Header size='huge' inverted><u><i>About Me</i></u></Header>
+                            <p className="about-me" ><i>I am full stack developer with a background of Inside Sales in different domains,
                             who fell in love with coding! I have serious passion for UI effects, animations and creating intuitive,
                             dynamic user experiences.</i></p>
                             <p className="about-me"><i>Currently seeking a full time position in
@@ -103,7 +101,7 @@ const About = () => {
                     </Grid>
                 </Segment>
               </Container>
-        </div>
+        </section>
     )
 }
 
