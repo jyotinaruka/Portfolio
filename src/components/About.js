@@ -54,17 +54,17 @@ const About = () => {
                                 <Header size='huge' inverted><u>Languages</u></Header>
                                 <Button className="skills" size="medium" inverted color='yellow' icon="js" content="JavaScript" />
                                 <Button className="skills" size="medium" inverted color='blue' icon="python" content="Python" />
-                                <Button className="skills" size="medium" inverted color='blue' icon="" content="Java" />
+                                <Button className="skills" size="medium" inverted color='blue' content="Java" />
                             </Grid.Column>
 
 
                             <Grid.Column width={8}>
-                                <Header size='huge' inverted><u>Framworks</u></Header>
+                                <Header size='huge' inverted><u>Frameworks</u></Header>
                                 <Button className="skills" size="medium" inverted color='teal' icon="react" content="React" />
-                                <Button className="skills" size="medium" inverted color='green' icon="" content="Django" />
+                                <Button className="skills" size="medium" inverted color='green' content="Django" />
                                 <Button className="skills" size="medium" inverted color='black' icon="flask" content="Flask" />
-                                <Button className="skills" size="medium" inverted color='olive' icon="" content="Spring" />
-                                <Button className="skills" size="medium" inverted color='orange' icon="" content="Express" />
+                                <Button className="skills" size="medium" inverted color='olive' icon="leaf" content="Spring" />
+                                <Button className="skills" size="medium" inverted color='orange' content="Express" />
                                 <Button className="skills" size="medium" inverted color='green' icon="node js" content="Node.js" />
                             </Grid.Column>
                         </Grid.Row>
@@ -81,8 +81,8 @@ const About = () => {
                                 <Header size='huge' inverted><u>Other</u></Header>
                                 <Button className="skills" size="medium" inverted color='orange' icon="html5" content="HTML5" />
                                 <Button className="skills" size="medium" inverted color='blue' icon="css3" content="CSS3" />
-                                <Button className="skills" size="medium" inverted color='teal' icon="" content="Semantic UI" />
-                                <Button className="skills" size="medium" inverted color='blue' icon="" content="Bootstrap" />
+                                <Button className="skills" size="medium" inverted color='teal' content="Semantic UI" />
+                                <Button className="skills" size="medium" inverted color='blue' content="Bootstrap" />
 
                             </Grid.Column>
                         </Grid.Row>
@@ -97,7 +97,7 @@ const About = () => {
                 <Segment className="about-align" inverted>
                     <Grid>
                         <Grid.Column width={10} verticalAlign='top'>
-                            <Button inverted color='red'><h2>Github Contribution</h2></Button>
+                            <Button className="skills" inverted color='violet'><h2>Github Contribution</h2></Button>
                             <img src="http://ghchart.rshah.org/jyotinaruka" alt="2016rshah's Github chart" />
                         </Grid.Column>
                     </Grid>
