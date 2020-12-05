@@ -13,16 +13,16 @@ const Intro = () => {
             <div className="intro-content display-table">
                 <div className="table-cell">
                     <div className="container">
-                        <h1 className="intro-title mb-4">Hello, I am Jyoti Singh</h1>
+                        <h1 className="intro-title mb-4">Jyoti Singh</h1>
                         <p className="intro-subtitle">
                             <span className="text-slider-items"></span>
                             <strong className="text-slider">
                                 <Typed
                                     strings={[
-                                        "Full Stack Developer ",
-                                        "Front End Developer",
-                                        "Web Developer",
-                                        "Software Engineer"
+                                            "Full Stack Developer ",
+                                            "Front End Developer",
+                                            "Web Developer",
+                                            "Software Engineer"
                                     ]}
                                     typeSpeed={80}
                                     backDelay={1100}
@@ -31,12 +31,7 @@ const Intro = () => {
                                 />
                             </strong>
                         </p>
-                        <p className="pt-3">
-                            <a href="/projects"><Button content='View My Work' primary /></a>
 
-
-
-                        </p>
                     </div>
                 </div>
             </div>

@@ -15,6 +15,11 @@ body{
   z-index: 100;
 }
 
+.m-nav {
+  margin-top: 80px;
+  box-sizing: border-box;
+}
+
 #intro.m-nav {
   margin-top: 80px;
 }
@@ -25,11 +30,20 @@ body{
 .p-1{
   padding: 1em !important;
 }
+.px-1, .ui.circular.label.px-1 {
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
+
 .m-0{
   margin: 0 !important;
 }
 .m-1{
   margin: 1em !important;
+}
+.mx-1 {
+  margin-left: 1em !important;
+  margin-right: 1em !important;
 }
 
 .logo {
@@ -52,7 +66,8 @@ body{
 .intro .intro-title {
   color: #fff;
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 10rem;
+  font-family: 'Great Vibes', cursive;
   
 }
 
@@ -72,6 +87,12 @@ body{
 
 .intro .text-slider-items {
   display: none;
+}
+
+.intro .text-slider{
+  font-family: 'Caveat', cursive;
+  font-weight: 500;
+  font-size: 50px;
 }
 
 .intro-single {
@@ -97,36 +118,54 @@ body{
   color: #fff;
 }
 
-/* about.js*/
-/* https://media3.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif*/
+/* ###################### about.js ############################*/
+
+
 .about-bg{
-  background-image:url("https://i.imgur.com/Yr32yur.gif");
   background-attachment: fixed;
-  height: 1000px;  
 }
 
 .about-align{
   margin-top: 50px 0 !important;
-  background-color: rgba(18, 15, 27, 0.5) !important;
+  
+}
+
+.about-heading{
+  font-family: 'Caveat', cursive !important;
+  font-size: 40px !important;
 }
 
 .about-me{
   font-family: sans-serif !important;
   font-size: large !important;
-  color: white !important;
   
 }
 
-.skills{
-  margin: 5px 5px !important;
-  cursor: default !important;
+.about-bg .ui.circular.label {
+  background-color: transparent;
+  border: 1px solid #151516;
+}
+.about-bg .ui.circular.label:hover {
+  border: 1px solid DodgerBlue;
 }
 
+.ui.header{
+  font-family: 'Caveat', cursive !important;
+  font-size: 2rem !important;
+}
+
+
 .projects-bg{
-  background-image: url("https://media3.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif");
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
   background-attachment: fixed;
   height: 1000px;
+  background:linear-gradient(rgb(233, 215, 215),rgb(248, 222, 227) )
+  
 }
+
+
+/* ########### contact page ##################*/
 
 .position-rel {
   position: relative;
@@ -145,10 +184,39 @@ body{
   margin-top: 0 !important;   
 }
 
+
+
+
+#contact h2{
+  text-align: center;
+  font-size:50px;
+  margin-bottom:0px;
+  padding:20px;
+  color:white;
+  }
+
+
 .contact-bg{
   background: url("../src/nebula.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.reach{
+  text-align: center;
+  padding:50px;
+}
+
+.reach a{
+  text-decoration:none;
+  color:white;
+  padding:20px;
+  font-size: 25px;   
+}
+
+#profile-link{
+  padding: 10px;
+  margin-top: 50px;
 }

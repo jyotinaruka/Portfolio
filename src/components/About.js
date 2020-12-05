@@ -8,8 +8,14 @@ import {
     Grid,
     Segment,
     TransitionablePortal,
-    Header
+    Header,
+    List,
+    Icon,
+    Label,
+    Card, extra
 } from 'semantic-ui-react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faJava, faBootstrap, faStripeS } from '@fortawesome/free-brands-svg-icons'
 import jyoti3 from '../jyoti3.jpg'
 
 
@@ -21,85 +27,176 @@ const About = () => {
                 <Segment className="about-align" >
                     <Grid columns={2}>
                         <Grid.Column width={6} verticalAlign='middle'>
-                            <p><Image size='medium' src={jyoti3} /></p>
+                            <Card
+                                image={jyoti3}
+                                header='Front End Developer'
+                                description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+                            />
+
                         </Grid.Column>
 
                         <Grid.Column width={10} verticalAlign='top'>
-                            <Header size='huge' inverted><u><i>About Me</i></u></Header>
-                            <p className="about-me" ><i>I am full stack developer with a background of Inside Sales in different domains,
-                            who fell in love with coding! I have serious passion for UI effects, animations and creating intuitive,
-                            dynamic user experiences.</i></p>
-                            <p className="about-me"><i>Currently seeking a full time position in
-                            Front-end developer to work with
-                            dedicated team to provide quality products and services.
+                            <Header size='huge' className="about-heading" ><u>About Me</u></Header>
+                            <p className="about-me" ><i>I am Software developer focusing on front-end technologies.
+                            I come from non traditional background,who fell in love with coding!
+                            I am passionate to learn and grow myself to make intuitive user experiences.
+                            I love simplicity combined with UI effects and animations.
+                            </i></p>
+                            <p className="about-me">I am organized and adaptive. Due to my self-learning and determination,
+                            I completed  bootcamp certification with highest honors (Black belts).
+                            I am a team player and eager to learn new technologies.</p>
+                            <p className="about-me"><i>Currently I am working as a TA (Teaching Assistant) in Coding Dojo, and
+                            I am looking for opportunities in an organization
+                            which encourages new learners and provides growth opportunities.
                              </i></p>
+                            
 
 
                         </Grid.Column>
                     </Grid>
-                </Segment>
+                
+                    <Divider />
 
-                <Segment className="about-align " inverted>
-                    <Grid>
-                        <Grid.Column width={10} verticalAlign='top'>
-                            <Button className="skills" inverted color='violet'><h1>Skills</h1></Button>
+                    <Grid stackable columns={4} >
+                        <Grid.Column textAlign='center'>
+                            <Header size='huge'>Languages</Header>
+                            <List>
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='js' /> JavaScript
+                                        </Label>
+                                </List.Item>
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='python' /> Python
+                                        </Label>
+                                </List.Item>
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon as={FontAwesomeIcon} icon={faJava} /> Java
+                                        </Label>
+                                </List.Item>
+                            </List>
                         </Grid.Column>
-                    </Grid>
 
-                    <Grid>
-                        <Grid.Row>
-                            <Grid.Column width={8}>
-                                <Header size='huge' inverted><u>Languages</u></Header>
-                                <Button className="skills" size="medium" inverted color='yellow' icon="js" content="JavaScript" />
-                                <Button className="skills" size="medium" inverted color='blue' icon="python" content="Python" />
-                                <Button className="skills" size="medium" inverted color='blue' content="Java" />
+
+                        <Grid.Column textAlign='center'>
+                            <Header size='huge' >Frameworks</Header>
+                            <List>
+
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='node' /> Node.js
+                                        </Label>
+                                </List.Item>
+
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='leaf' /> Spring
+                                        </Label>
+                                </List.Item>
+
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='express' /> Express
+                                        </Label>
+                                </List.Item>
+
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='react' /> React
+                                        </Label>
+                                </List.Item>
+
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='django' /> Django
+                                        </Label>
+                                </List.Item>
+
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='flask' /> Flask
+                                        </Label>
+                                </List.Item>
+
+
+
+
+
+                                
+                            </List>
+                            </Grid.Column>
+                        
+                        <Grid.Column textAlign='center'>
+                            <Header size='huge' >Database</Header>
+                            <List>
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='database' /> MongoDB
+                                        </Label>
+                                </List.Item>
+
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='database' /> SQLite
+                                        </Label>
+                                </List.Item>
+
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='database' /> MySql
+                                        </Label>
+                                </List.Item>
+
+
+
+                                
+                            </List>
                             </Grid.Column>
 
+                        <Grid.Column textAlign='center'>
+                            <Header size='huge'>Others</Header>
+                            <List>
 
-                            <Grid.Column width={8}>
-                                <Header size='huge' inverted><u>Frameworks</u></Header>
-                                <Button className="skills" size="medium" inverted color='teal' icon="react" content="React" />
-                                <Button className="skills" size="medium" inverted color='green' content="Django" />
-                                <Button className="skills" size="medium" inverted color='black' icon="flask" content="Flask" />
-                                <Button className="skills" size="medium" inverted color='olive' icon="leaf" content="Spring" />
-                                <Button className="skills" size="medium" inverted color='orange' content="Express" />
-                                <Button className="skills" size="medium" inverted color='green' icon="node js" content="Node.js" />
-                            </Grid.Column>
-                        </Grid.Row>
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon as={FontAwesomeIcon} icon={faStripeS} /> Semantic UI
+                                        </Label>
+                                </List.Item>
 
-                        <Grid.Row>
-                            <Grid.Column width={8}>
-                                <Header size='huge' inverted><u>Database</u></Header>
-                                <Button className="skills" size="medium" inverted color='green' icon="database" content="MongoDB" />
-                                <Button className="skills" size="medium" inverted color='blue' icon="database" content="MySql" />
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon as={FontAwesomeIcon} icon={faBootstrap} /> Bootstrap
+                                        </Label>
+                                </List.Item>
 
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='html5' /> HTML5
+                                        </Label>
+                                </List.Item>
 
-                            </Grid.Column>
-                            <Grid.Column width={8}>
-                                <Header size='huge' inverted><u>Other</u></Header>
-                                <Button className="skills" size="medium" inverted color='orange' icon="html5" content="HTML5" />
-                                <Button className="skills" size="medium" inverted color='blue' icon="css3" content="CSS3" />
-                                <Button className="skills" size="medium" inverted color='teal' content="Semantic UI" />
-                                <Button className="skills" size="medium" inverted color='blue' content="Bootstrap" />
-
-                            </Grid.Column>
-                        </Grid.Row>
-                    </Grid>
+                                <List.Item>
+                                    <Label circular size='big' className="px-1">
+                                        <Icon name='css3' /> CSS3
+                                        </Label>
+                                </List.Item>
 
 
-                </Segment>
-
-
-
-
-                <Segment className="about-align" inverted>
-                    <Grid>
-                        <Grid.Column width={10} verticalAlign='top'>
-                            <Button className="skills" inverted color='violet'><h2>Github Contribution</h2></Button>
-                            <img src="http://ghchart.rshah.org/jyotinaruka" alt="2016rshah's Github chart" />
+                                
+                            </List>        
                         </Grid.Column>
+
                     </Grid>
+
+
                 </Segment>
+
+
+
+
+
               </Container>
         </section>
     )
