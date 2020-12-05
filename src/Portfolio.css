@@ -1,3 +1,7 @@
+html {
+  font-size: 20px;
+}
+
 body{
     padding:0;
     margin:0;
@@ -5,23 +9,6 @@ body{
 }
 .bg {
     background-color:#151516 !important;   
-}
-
-.navbar {
-  position: fixed !important;
-  top: 0px;
-  width: 100%;
-  overflow: hidden;
-  z-index: 100;
-}
-
-.m-nav {
-  margin-top: 80px;
-  box-sizing: border-box;
-}
-
-#intro.m-nav {
-  margin-top: 80px;
 }
 
 .p-0 {
@@ -44,6 +31,36 @@ body{
 .mx-1 {
   margin-left: 1em !important;
   margin-right: 1em !important;
+}
+
+/* Generic UI */
+.ui.header {
+  font-family: 'Caveat', cursive !important;
+}
+h2.ui.header {
+  font-size: 3rem !important;
+}
+h3.ui.header {
+  font-size: 2rem !important;
+}
+
+/* Navbar */
+
+.navbar {
+  position: fixed !important;
+  top: 0px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.m-nav {
+  margin-top: 80px;
+  box-sizing: border-box;
+}
+
+#intro.m-nav {
+  margin-top: 80px;
 }
 
 .logo {
@@ -130,11 +147,6 @@ body{
   
 }
 
-.about-heading{
-  font-family: 'Caveat', cursive !important;
-  font-size: 40px !important;
-}
-
 .about-me{
   font-family: sans-serif !important;
   font-size: large !important;
@@ -149,9 +161,16 @@ body{
   border: 1px solid DodgerBlue;
 }
 
-.ui.header{
+
+.card-header{
   font-family: 'Caveat', cursive !important;
   font-size: 2rem !important;
+}
+
+.date{
+  font-weight: 900 !important;
+  color: olivedrab !important;
+  text-align: center !important;
 }
 
 
