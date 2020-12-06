@@ -53,7 +53,7 @@ h3.ui.header, .ui.card .header {
   width: 100% !important;
 }
 main > section {
-  min-height: 100vh;
+  min-height: calc(100vh - 81px);
 }
 /* Navbar */
 
@@ -63,12 +63,14 @@ main > section {
   width: 100%;
   overflow: hidden;
   z-index: 100;
+  border-bottom: 1px solid rgba(119, 136, 153, 1) !important;
 }
 
 .m-nav {
   padding-top: 1em !important;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding-bottom: 3rem !important;
+  margin-top: 0 !important;
 }
 
 .logo {
@@ -94,7 +96,6 @@ main > section {
   font-weight: 700;
   font-size: 10rem;
   font-family: 'Great Vibes', cursive;
-  
 }
 .intro .intro-content{
     text-align: center;
@@ -102,12 +103,11 @@ main > section {
 }
 
 .intro-content .container{
-    margin: 100px 0;
+    margin: 12rem 0;
 }
 
 .intro .intro-subtitle {
   font-size: 2.5rem;
-  
 }
 
 .intro .text-slider-items {
@@ -148,6 +148,7 @@ main > section {
 
 .about-bg{
   background-attachment: fixed;
+  background: repeating-linear-gradient(45deg, rgba(119, 136, 153, 0.05), rgba(119, 136, 153, 0.05) 5px, transparent 5px, transparent 10px);
 }
 
 .about-align{
@@ -185,7 +186,7 @@ main > section {
 .projects-bg{
   font-size: 20px;
   background-attachment: fixed;
-  background:linear-gradient(rgb(233, 215, 215),rgb(248, 222, 227) );  
+  background:linear-gradient(LightSlateGray, white);
 }
 
 .projects-bg .ui.label > .icon {
@@ -198,7 +199,7 @@ main > section {
 }
 
 #contact.m-nav{
-  margin-top: 0 !important;   
+  /* margin-top: 0 !important;    */
 }
 
 #contact h2{

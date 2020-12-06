@@ -1,5 +1,5 @@
 import React from 'react'
-import { Segment, Header, Grid, GridRow, Embed, Card, Label, Icon } from 'semantic-ui-react';
+import { Header, Grid, Card, Label, Icon, Container } from 'semantic-ui-react';
 import Codepen from "react-codepen-embed";
 import videoMuzic from '../projects-video/muzic.webm'
 import videoPycommerce from '../projects-video/pycommerce.webm'
@@ -10,6 +10,7 @@ import { faBootstrap, faJava, faStripeS } from '@fortawesome/free-brands-svg-ico
 const Projects = () => {
     return (
         <section id="projects" className="projects-bg p-1 m-nav">
+            <Container>
             <Header as={'h2'} textAlign='center'>These are some of my projects</Header>
             <Grid stackable stretched columns={2}>
                 <Grid.Column>
@@ -143,6 +144,7 @@ const Projects = () => {
                     </Card>
                 </Grid.Column>
             </Grid>
+            </Container>
         </section>
     )
 }
