@@ -1,10 +1,9 @@
 html {
+  box-sizing: border-box;
   font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 body{
-    padding:0;
-    margin:0;
     background: linear-gradient(rgb(139, 132, 132),black)
 }
 .bg {
@@ -32,18 +31,26 @@ body{
   margin-left: 1em !important;
   margin-right: 1em !important;
 }
-
+.my-1 {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
 /* Generic UI */
-.ui.header {
+.ui.header, .ui.card .header {
   font-family: 'Caveat', cursive !important;
 }
 h2.ui.header {
   font-size: 3rem !important;
 }
-h3.ui.header {
-  font-size: 2rem !important;
+h3.ui.header, .ui.card .header {
+  font-size: 2.5rem !important;
 }
-
+.ui.card {
+  width: 100% !important;
+}
+main > section {
+  min-height: 100vh;
+}
 /* Navbar */
 
 .navbar {
@@ -55,12 +62,9 @@ h3.ui.header {
 }
 
 .m-nav {
-  margin-top: 80px;
-  box-sizing: border-box;
-}
-
-#intro.m-nav {
-  margin-top: 80px;
+  padding-top: 1em !important;
+  margin-top: 2rem;
+  padding-bottom: 3rem !important;
 }
 
 .logo {
@@ -87,7 +91,6 @@ h3.ui.header {
   font-family: 'Great Vibes', cursive;
   
 }
-
 .intro .intro-content{
     text-align: center;
     color: #fff;
@@ -153,53 +156,40 @@ h3.ui.header {
   
 }
 
-.about-bg .ui.circular.label {
+.about-bg .ui.circular.label, .projects-bg .ui.circular.label {
   background-color: transparent;
   border: 1px solid #151516;
 }
-.about-bg .ui.circular.label:hover {
+.about-bg .ui.circular.label:hover, .projects-bg .ui.circular.label:hover {
   border: 1px solid DodgerBlue;
+  color: DodgerBlue;
 }
 
-
-.card-header{
+.about-bg .card-header{
   font-family: 'Caveat', cursive !important;
   font-size: 2rem !important;
 }
 
-.date{
+.about-bg .card-highlight{
   font-weight: 900 !important;
   color: olivedrab !important;
   text-align: center !important;
 }
 
-
+/* ########### contact page ##################*/
 .projects-bg{
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
   background-attachment: fixed;
-  height: 1000px;
-  background:linear-gradient(rgb(233, 215, 215),rgb(248, 222, 227) )
-  
+  background:linear-gradient(rgb(233, 215, 215),rgb(248, 222, 227) );  
 }
 
+.projects-bg .ui.label > .icon {
+  margin-right: 0.75rem !important;
+}
 
 /* ########### contact page ##################*/
 
-.position-rel {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  
-}
-
-#tsparticles {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-}
-.m-c{
+#contact.m-nav{
   margin-top: 0 !important;   
 }
 

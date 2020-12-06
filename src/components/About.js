@@ -22,6 +22,7 @@ const About = () => {
     return (
         <section id="about" className="about-bg m-nav">
             <Container>
+                <Header as={'h2'} textAlign="center">About Me</Header>
                 <Segment className="about-align" >
                     <Grid columns={2}>
                         <Grid.Column width={6} verticalAlign='middle'>
@@ -30,13 +31,12 @@ const About = () => {
                                 <Card.Content>
                                     <Card.Header className="card-header">Front End Developer</Card.Header>
                                     <Card.Meta>
-                                        <span className='date'><i># OPEN TO WORK</i></span>
+                                        <span className='card-highlight'><i># OPEN TO WORK</i></span>
                                     </Card.Meta>
                                 </Card.Content>
                             </Card>
                         </Grid.Column>
                         <Grid.Column width={10} verticalAlign='top'>
-                            <Header as={'h2'}>About Me</Header>
                             <p className="about-me" ><i>I am Software developer focusing on front-end technologies.
                             I come from non traditional background,who fell in love with coding!
                             I am passionate to learn and grow myself to make intuitive user experiences.
@@ -98,7 +98,7 @@ const About = () => {
                                 </List.Item>
                                 <List.Item>
                                     <Label circular size='big' className="px-1">
-                                        <Icon name='django' /> Django
+                                        Django
                                     </Label>
                                 </List.Item>
                                 <List.Item>
@@ -114,17 +114,17 @@ const About = () => {
                                 <List.Item>
                                     <Label circular size='big' className="px-1">
                                         <Icon name='database' /> MongoDB
-                                        </Label>
+                                    </Label>
                                 </List.Item>
                                 <List.Item>
                                     <Label circular size='big' className="px-1">
                                         <Icon name='database' /> SQLite
-                                        </Label>
+                                    </Label>
                                 </List.Item>
                                 <List.Item>
                                     <Label circular size='big' className="px-1">
                                         <Icon name='database' /> MySql
-                                        </Label>
+                                    </Label>
                                 </List.Item>
                             </List>
                         </Grid.Column>

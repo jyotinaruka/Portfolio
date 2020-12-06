@@ -6,7 +6,7 @@ const Contact = () => {
 
 
     return (
-        <section id="contact" className="contact position-rel m-nav contact-bg">
+        <section id="contact" className="contact m-nav contact-bg">
 
 
             
