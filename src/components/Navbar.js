@@ -6,7 +6,6 @@ import {
     Menu,
     Segment,
 } from 'semantic-ui-react'
-import logo from '../JS-logo.png'
 
 const Navbar = () => {
     return (
@@ -15,9 +14,7 @@ const Navbar = () => {
                 <ScrollspyNav scrollTargetIds={['intro', 'about', 'projects', 'contact']}
                     activeNavClass="active" offset={-80} scrollDuration={500}>
                 <Menu className="bg" borderless inverted size='massive'>
-                        <Menu.Item as="a" href="/" className="logo">
-                        <img src={logo} alt="" />
-                    </Menu.Item>
+                        <Menu.Item as="a" href="/" className="logo">JS</Menu.Item>
                     <Menu.Menu position='right' className="bg" icon='labeled' borderless>
                             <Menu.Item as="a" href="#intro">
                             <Icon name='home' />

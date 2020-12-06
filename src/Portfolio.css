@@ -72,9 +72,11 @@ main > section {
 }
 
 .logo {
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 1rem !important;
+    margin: 5px !important;
     text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
 }
 .logo img{
     padding: 0 !important;
@@ -85,7 +87,6 @@ main > section {
 .logo:hover{
     background-color: transparent !important;
 }
-
 /* Intro.js*/
 
 .intro .intro-title {
