@@ -1,33 +1,20 @@
 import React from 'react'
-import Particles from "react-tsparticles";
-import { Icon } from 'semantic-ui-react';
+import { Container, Header, Icon } from 'semantic-ui-react';
 
 const Contact = () => {
-
-
     return (
         <section id="contact" className="contact m-nav contact-bg">
-
-
-            
-
-            <div className="reach">
-                <h2><u>Let's work together...</u></h2>
-                <div id="profile-link">
-                    <a target="_blank" href="https://github.com/jyotinaruka">
-                        <Icon name='github' /> Github</a>
-                    <a target="_blank" href="https://www.linkedin.com/in/jyotinaruka/">
-                        <Icon name='linkedin' /> LinkedIn</a>
-                    <a target="_blank" href="#">
-                        <Icon name='mail' />Email</a>
+            <Container>
+                <div className="reach">
+                    <Header as={'h2'}>Let's work together...</Header>
+                    <div id="profile-link">
+                        <a target="_blank" href="https://github.com/jyotinaruka">
+                            <Icon name='github' /> Github</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/jyotinaruka/">
+                            <Icon name='linkedin' /> LinkedIn</a>
+                    </div>
                 </div>
-            </div>
-
-                
-
-
-
-
+            </Container>
         </section>
     )
 }

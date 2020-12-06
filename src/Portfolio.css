@@ -1,10 +1,14 @@
-html {
+* {
   box-sizing: border-box;
-  font-size: 20px;
+}
+html {
+  font-size: 24px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
 }
 body{
-    background: linear-gradient(rgb(139, 132, 132),black)
+    background: linear-gradient(rgb(139, 132, 132),black);
 }
 .bg {
     background-color:#151516 !important;   
@@ -176,7 +180,7 @@ main > section {
   text-align: center !important;
 }
 
-/* ########### contact page ##################*/
+/* ########### projects page ##################*/
 .projects-bg{
   font-size: 20px;
   background-attachment: fixed;
@@ -188,25 +192,24 @@ main > section {
 }
 
 /* ########### contact page ##################*/
+#contact {
+  font-size: 2rem !important;
+}
 
 #contact.m-nav{
   margin-top: 0 !important;   
 }
 
-
-
-
 #contact h2{
-  text-align: center;
-  font-size:50px;
+  font-size: 5rem !important;
   margin-bottom:0px;
-  padding:20px;
+  padding: 3rem;
+  padding-bottom: 1rem;
   color:white;
-  }
-
+}
 
 .contact-bg{
-  background: url("../src/nebula.jpg") no-repeat center center fixed; 
+  background: url("../src/earth.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -218,14 +221,19 @@ main > section {
   padding:50px;
 }
 
-.reach a{
+#profile-link {
+  padding: 2rem;
+  padding-bottom: 1rem;
+  margin-top: 0rem;
+}
+#profile-link a {
+  transition: 0.3s ease;
   text-decoration:none;
   color:white;
   padding:20px;
-  font-size: 25px;   
+  font-size: 1.8rem;
 }
-
-#profile-link{
-  padding: 10px;
-  margin-top: 50px;
+#profile-link a:hover {
+  color:white;
+  font-size: 2.5rem;
 }
