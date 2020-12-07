@@ -6,7 +6,7 @@ import { faBootstrap, faJava, faStripeS } from '@fortawesome/free-brands-svg-ico
 
 const Projects = () => {
     return (
-        <section id="projects" className="projects-bg p-1 m-nav">
+        <section id="projects" className="projects-bg m-nav">
             <Container>
                 <Header as={'h2'} textAlign="center">
                     These are some of my projects

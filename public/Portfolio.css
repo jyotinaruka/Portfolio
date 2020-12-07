@@ -69,9 +69,16 @@ main > section {
   position: fixed !important;
   top: 0px;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   z-index: 100;
   border-bottom: 1px solid rgba(119, 136, 153, 1) !important;
+}
+
+.bigScreen{
+  display: flex;
+}
+.smallScreen{
+  display: none !important;
 }
 
 .m-nav {
@@ -79,6 +86,20 @@ main > section {
   /* margin-top: 2rem; */
   padding-bottom: 3rem !important;
   margin-top: 0 !important;
+}
+
+.navbar .ui.menu .ui.dropdown .menu > .item {
+  background-color: rgb(21, 21, 22) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-decoration-color: rgba(255, 255, 255, 0.9) !important;
+}
+.navbar .ui.menu .ui.dropdown .menu > .item.active {
+  background-color: rgb(21, 21, 22) !important;
+  color: rgba(255, 255, 255, 1) !important;
+  text-decoration-color: rgba(255, 255, 255, 1) !important;
+}
+.navbar .ui.dropdown .menu {
+  border-color: rgba(119, 136, 153, 1) !important;
 }
 
 .logo {
@@ -111,7 +132,8 @@ main > section {
 }
 
 .intro-content .container{
-    margin: 12rem 0;
+  margin: 12rem 0;
+  margin: calc((100vh - 140px) / 2) 0;
 }
 
 .intro .intro-subtitle {
@@ -125,7 +147,7 @@ main > section {
 .intro .text-slider{
   font-family: 'Caveat', cursive;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 4rem;
 }
 
 .intro-single {
@@ -232,7 +254,7 @@ main > section {
 
 .reach{
   text-align: center;
-  padding:50px;
+  padding:4rem 2rem;
 }
 
 #profile-link {
@@ -246,8 +268,39 @@ main > section {
   color:white;
   padding:20px;
   font-size: 1.8rem;
+  display: inline-block;
 }
 #profile-link a:hover {
   color:white;
   font-size: 2.5rem;
+}
+
+
+/* breakpoints */
+
+@media only screen and (max-width: 700px) {
+  .bigScreen{
+    display: none !important;
+  }
+  .smallScreen{
+    display: flex !important;
+  }
+  .intro .intro-title {
+    font-size: 8rem !important;
+  }
+  .intro .text-slider {
+    font-size: 3rem !important;
+  }
+  .intro-content .container{
+    margin: 13rem 0;
+    margin: calc((100vh - 355px) / 2) 0;
+  }
+  #contact h2 {
+    font-size: 4rem !important;
+    padding: 3rem 0 1rem 0;
+  }
+  .reach {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }

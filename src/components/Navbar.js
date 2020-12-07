@@ -2,9 +2,11 @@ import React from 'react'
 import ScrollspyNav from "react-scrollspy-nav";
 import {
     Container,
+    Dropdown,
     Icon,
     Menu,
     Segment,
+
 } from 'semantic-ui-react'
 
 const Navbar = () => {
@@ -13,9 +15,9 @@ const Navbar = () => {
             <Container>
                 <ScrollspyNav scrollTargetIds={['intro', 'about', 'projects', 'contact']}
                     activeNavClass="active" offset={-80} scrollDuration={500}>
-                <Menu className="bg" borderless inverted size='massive'>
+                    <Menu className="bg" borderless inverted size='massive'>
                         <Menu.Item as="a" href="/" className="logo">JS</Menu.Item>
-                    <Menu.Menu position='right' className="bg" icon='labeled' borderless>
+                        <Menu.Menu position='right' className="bg bigScreen" icon='labeled' borderless>
                             <Menu.Item as="a" href="#intro">
                             <Icon name='home' />
                             Home
@@ -33,8 +35,19 @@ const Navbar = () => {
                             Contact
                         </Menu.Item>
                     </Menu.Menu>
+                        <Menu.Menu position='right' className="bg smallScreen" inverted vertical>
+                            <Dropdown icon='bars' item>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item as="a" href="#intro" icon='home' text='Home' />
+                                    <Dropdown.Item as="a" href="#about" icon='user circle' text='About' />
+                                    <Dropdown.Item as="a" href="#projects" icon='book' text='Work' />
+                                    <Dropdown.Item as="a" href="#contact" icon='at' text='Contact' />
+                                </Dropdown.Menu>
+                            </Dropdown>
+                        </Menu.Menu>
                     </Menu>
                 </ScrollspyNav>
+
             </Container>
         </Segment>
     )

@@ -6,7 +6,7 @@ const Contact = () => {
         <section id="contact" className="contact m-nav contact-bg">
             <Container>
                 <div className="reach">
-                    <Header as={'h2'}>Let's work together...</Header>
+                    <Header as={'h2'} textAlign='center'>Let's work together...</Header>
                     <div id="profile-link">
                         <a target="_blank" href="https://github.com/jyotinaruka">
                             <Icon name='github' /> Github</a>

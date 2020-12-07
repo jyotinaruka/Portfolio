@@ -24,8 +24,8 @@ const About = () => {
             <Container>
                 <Header as={'h2'} textAlign="center">About Me</Header>
                 <Segment className="about-align" >
-                    <Grid columns={2}>
-                        <Grid.Column width={6} verticalAlign='middle'>
+                    <Grid stacked columns={2}>
+                        <Grid.Column mobile={16} tablet={8} computer={6} verticalAlign='middle'>
                             <Card>
                                 <Image src={jyoti3} />
                                 <Card.Content>
@@ -36,7 +36,7 @@ const About = () => {
                                 </Card.Content>
                             </Card>
                         </Grid.Column>
-                        <Grid.Column width={10} verticalAlign='top'>
+                        <Grid.Column mobile={16} tablet={8} computer={10} verticalAlign='top'>
                             <p className="about-me" ><i>I am Software developer focusing on front-end technologies.
                             I come from non traditional background,who fell in love with coding!
                             I am passionate to learn and grow myself to make intuitive user experiences.
