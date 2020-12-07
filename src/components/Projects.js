@@ -1,9 +1,6 @@
 import React from 'react'
 import { Header, Grid, Card, Label, Icon, Container } from 'semantic-ui-react';
 import Codepen from "react-codepen-embed";
-import videoMuzic from '../projects-video/muzic.webm'
-import videoPycommerce from '../projects-video/pycommerce.webm'
-import videoFriendbook from '../projects-video/friendbook.webm'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBootstrap, faJava, faStripeS } from '@fortawesome/free-brands-svg-icons';
 
@@ -25,7 +22,7 @@ const Projects = () => {
                             </Card.Meta>
                         </Card.Content>
                         <video controls autoPlay="true" loop width="100%">
-                            <source src={videoMuzic} type="video/webm" />
+                                <source src="/muzic.webm" type="video/webm" />
                             Sorry, your browser doesn't support embedded videos.
                         </video>
                         <Card.Content extra>
@@ -50,7 +47,7 @@ const Projects = () => {
                             </Card.Meta>
                         </Card.Content>
                         <video controls autoPlay="true" loop width="100%">
-                            <source src={videoFriendbook} type="video/webm" />
+                                <source src="/friendbook.webm" type="video/webm" />
                             Sorry, your browser doesn't support embedded videos.
                         </video>
                         <Card.Content extra>
@@ -81,7 +78,7 @@ const Projects = () => {
                             </Card.Meta>
                         </Card.Content>
                         <video controls autoPlay="true" loop width="100%">
-                            <source src={videoPycommerce} type="video/webm" />
+                                <source src="/pycommerce.webm" type="video/webm" />
                             Sorry, your browser doesn't support embedded videos.
                         </video>
                         <Card.Content extra>
