@@ -1,5 +1,3 @@
-import './App.css';
-import './Portfolio.css';
 import "react-router";
 import Intro from "./components/Intro.js";
 import About from "./components/About.js";

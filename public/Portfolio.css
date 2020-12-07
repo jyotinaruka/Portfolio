@@ -6,9 +6,17 @@ html {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 body{
+    margin: 0;
     background: linear-gradient(rgb(139, 132, 132),black);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  white-space: pre;
 }
 .bg {
     background-color:#151516 !important;   
@@ -211,7 +219,7 @@ main > section {
 }
 
 .contact-bg{
-  background: url("../src/earth.jpg") no-repeat center center fixed; 
+  background: url("/earth.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
