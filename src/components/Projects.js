@@ -41,8 +41,7 @@ const Projects = () => {
                             <Card.Content>
                                 <Card.Header>Friendbook</Card.Header>
                                 <Card.Description>
-                                    Friendbook is a social application developed in Java & Spring which features wall
-                                    posts, comments, events and user profiles. User can Add and Like the comments.
+                                    Friendbook is a social application developed in Java stack which features wall posts, comments, events and user profiles.
 								</Card.Description>
                                 <Card.Meta className="my-1" ></Card.Meta>
                             </Card.Content>
