@@ -19,22 +19,26 @@ const Navbar = () => {
                         <Menu.Item as="a" href="/" className="logo">JS</Menu.Item>
                         <Menu.Menu position='right' className="bg bigScreen" icon='labeled' borderless>
                             <Menu.Item as="a" href="#intro">
-                            <Icon name='home' />
-                            Home
-                        </Menu.Item>
+                                <Icon name='home' />Home</Menu.Item>
+
                             <Menu.Item as="a" href="#about">
-                            <Icon name='user circle' />
-                            About
-                        </Menu.Item>
+                                <Icon name='user circle' />About</Menu.Item>
+
                             <Menu.Item as="a" href="#projects">
-                            <Icon name='book' />
-                            Work
-                        </Menu.Item>
+                                <Icon name='book' />Work</Menu.Item>
+
+                            <Menu.Item as="a" href="#">
+                                <Icon name='' />Resume</Menu.Item>
+
+
                             <Menu.Item as="a" href="#contact">
-                            <Icon name='at' />
-                            Contact
-                        </Menu.Item>
-                    </Menu.Menu>
+                                <Icon name='at' />Contact</Menu.Item>
+
+
+
+
+
+                        </Menu.Menu>
                         <Menu.Menu position='right' className="bg smallScreen" inverted vertical>
                             <Dropdown icon='bars' item>
                                 <Dropdown.Menu>
